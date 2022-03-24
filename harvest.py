@@ -145,7 +145,7 @@ def get_sellability_report(melons):
     sellability = None
 
     for melon in melons:
-        if melon.shape_rating > 5 and melon.color_rating > 5 and melon.harvested_from not 3:
+        if melon.shape_rating and melon.color_rating > 5 and melon.harvested_from != 3:
             sellability = "CAN BE SOLD"
         else: 
             sellability = "NOT SELLABLE"
